@@ -1,0 +1,159 @@
+.projects {
+  width: 90%;
+  height: 550px;
+  margin: 100px auto;
+  /* background-color: bisque; */
+  display: grid;
+  grid-template-columns: 295px 1fr;
+  gap: 50px;
+}
+
+.projects .latest_projects {
+  /* background-color: rgb(179, 226, 245); */
+
+}
+
+.projects .latest_projects h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Cinzel";
+}
+
+.projects .latest_projects button {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  background: none;
+  border: none;
+  margin: 10px 0;
+}
+.projects .latest_projects button a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #035b8d;
+}
+.projects .latest_projects button a span {
+}
+
+.projects .projects_show {
+  /* background-color: rgb(15, 51, 90); */
+  overflow: hidden;
+  padding-left: 30px;
+}
+
+/* ------------------------------------------------------------- */
+
+.projects .projects_show {
+
+  position: relative;
+  display: flex;
+}
+
+.projects .projects_show .proj_show-btns {
+  z-index: 10;
+  width: calc((100% + 0px) / 2); /* parent width (gap - padding = 0) / 2*/
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: calc(
+    50% - 90px
+  ); /* 50% of .projects_show --> (parent - height of card img) / 2 == center of the card img */
+  left: 15px; /* 1/2 gap  (30px / 2)*/
+  transform: translateY(-50%);
+}
+.projects .projects_show .proj_show-btns button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  background-color: #035b8d;
+  transition: 0.7s;
+  border: none;
+}
+.projects .projects_show .proj_show-btns button:hover {
+  background-color: white;
+  color: black;
+}
+
+.projects .projects_show .proj_show-btns button:nth-of-type(1) {
+  left: 0;
+}
+
+.projects .projects_show .proj_show-btns button:nth-of-type(2) {
+  right: 0;
+}
+
+.projects .projects_show .projects-show-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.projects .projects_show .projects-show-wrapper .projects-show-parent {
+  display: flex;
+  gap: 30px;
+}
+.projects-show-wrapper .projects-show-parent .card {
+  height: 550px;
+  flex: 0 0 calc((100% - (1 * 30px)) / 2);
+  background-color: white;
+  position: relative;
+}
+
+.projects-show-wrapper .projects-show-parent .card .card-img {
+  height: 370px;
+  width: 100%;
+  overflow: hidden;
+}
+.projects-show-wrapper .projects-show-parent .card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-show-wrapper .projects-show-parent .card .proj_show_title {
+    width: 140px;
+    /* background-color: aqua; */
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:8px;
+}
+.projects-show-wrapper .projects-show-parent .card .proj_show_title p {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+}
+.projects-show-wrapper .projects-show-parent .card .proj_show_title .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.projects-show-wrapper
+  .projects-show-parent
+  .card
+  .proj_show_title
+  .location
+  span:nth-of-type(1) {
+    color: #666666;
+    font-size: 14px;
+}
+
+.projects-show-wrapper
+  .projects-show-parent
+  .card
+  .proj_show_title
+  .location
+  span:nth-of-type(2) {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 14px;
+    color: #666666;
+}
+
+

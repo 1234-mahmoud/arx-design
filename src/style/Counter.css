@@ -1,0 +1,23 @@
+.counter {
+  width: 87px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.counter .plus_symb {
+margin-bottom: 30px;
+margin-left: 5px;
+  color: orange;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.counter h2.counter-num{
+    color:white;
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 48px;
+}

@@ -1,0 +1,24 @@
+.section_title{
+    text-transform: uppercase;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.section_title h4{
+color: #035B8D;
+font-weight: 700;
+font-size: 40px;
+font-family: 'Lato';
+margin-bottom: 30px;
+}
+
+
+.section_title h2{
+    width: 800px;
+    font-weight: 700;
+    font-size:48px;
+    font-family: 'Cinzel';
+}
