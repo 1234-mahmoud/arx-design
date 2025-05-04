@@ -6,6 +6,7 @@ import Shorts from './components/Shorts'
 import Services from './components/Services'
 import Statistics from './components/Statistics'
 import Projects from './components/Projects'
+import Blog from './components/Blog'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Services/>
       <Statistics/>
       <Projects/>
+      <Blog/>
     </div>
   )
 }
