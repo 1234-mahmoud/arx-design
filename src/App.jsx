@@ -8,6 +8,7 @@ import Statistics from './components/Statistics'
 import Projects from './components/Projects'
 import Blog from './components/Blog'
 import Clients from './components/Clients'
+import Subscribtion from './components/Subscribtion'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Projects/>
       <Blog/>
       <Clients/>
+      <Subscribtion/>
     </div>
   )
 }
