@@ -14,6 +14,7 @@
 }
 
 .Short-parent .swiper-btns {
+  z-index: 20;
   width: 85%;
   /* background-color: rgb(12, 85, 189); */
   padding: 20px 0;
@@ -32,10 +33,7 @@
   transition: 0.7s;
   border: none;
 }
-.Short-parent .swiper-btns button:hover {
-  background-color: white;
-  color: black;
-}
+
 
 .Short-parent .swiper-btns button:nth-of-type(1) {
   left: 0;
@@ -50,6 +48,12 @@
   width: 80%;
   padding: 30px;
   /* background-color: rgb(79, 139, 143); */
+}
+@media (max-width:767px) {
+  
+.Short-parent .slider-wrapper{
+  width: 100%;
+}
 }
 
 .Short-parent  .slider-wrapper .slider-parent {
@@ -94,6 +98,14 @@
   height: 800px;
   overflow: hidden;
 }
+
+
+@media (max-width:767px) {
+  .slider-wrapper .slider-parent .card .card-img {
+
+    height: 480px
+  }
+  }
 .slider-wrapper .slider-parent .card .card-img img {
   width: 100%;
   height: 100%;
@@ -115,6 +127,15 @@ right: 0;
 margin: 30px;
 }
 
+
+@media (max-width:767px) {
+  .slider-wrapper .slider-parent .card .card-layer .reel img{
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
 .slider-wrapper .slider-parent .card .card-layer .vid{
   position: inherit;
   top: 50%;
@@ -122,11 +143,31 @@ margin: 30px;
   transform: translate(-50%,-50%);
 }
 
+@media (max-width:767px) {
+  .slider-wrapper .slider-parent .card .card-layer .vid img{
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
 .slider-wrapper .slider-parent .card .card-layer .card-title{
   position: inherit;
   bottom: 0;
   left: 0;
   margin: 50px;
   color: white;
+  font-family: 'Lato';
 }
 
+
+@media (max-width:767px) {
+  .slider-wrapper .slider-parent .card .card-layer .card-title h1{
+   font-size: 16px;
+  }
+
+  .slider-wrapper .slider-parent .card .card-layer .card-title span{
+    font-size: 14px;
+
+  }
+}

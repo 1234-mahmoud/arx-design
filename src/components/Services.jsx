@@ -44,9 +44,9 @@ export default function Services() {
       <div className="services-content">
         {services_data.map((s, idx) => (
           <div className="service" key={idx}>
-          <div className="service-img">
-          <img src={s.icon} alt="" />
-          </div>
+            <div className="service-img">
+              <img src={s.icon} alt="" />
+            </div>
             <p className="serv_title">{s.title}</p>
             <p className="serv_desc">{s.discribtion}</p>
           </div>

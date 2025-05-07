@@ -18,12 +18,13 @@ function App() {
       <About_us/>
       <Shorts/>
       <Services/>
+      {/* 
       <Statistics/>
       <Projects/>
       <Blog/>
       <Clients/>
 
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }
