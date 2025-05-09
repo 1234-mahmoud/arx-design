@@ -17,11 +17,6 @@
   /* background-color: bisque; */
 }
 
-@media (max-width: 767px) {
-  .services .services-content {
-    /* grid-template-columns:268px; */
-  }
-}
 
 .services .service {
   padding: 20px;

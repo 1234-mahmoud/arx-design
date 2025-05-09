@@ -24,6 +24,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
+@media (min-width: 1201px) and (max-width:1320px) {
+  
+.Short-parent .swiper-btns {
+  width:90%;
+}
+}
+
 .Short-parent .swiper-btns button {
   width: 30px;
   height: 30px;
@@ -49,7 +56,14 @@
   padding: 30px;
   /* background-color: rgb(79, 139, 143); */
 }
-@media (max-width:767px) {
+@media (max-width:1200px) {
+  
+.Short-parent .slider-wrapper{
+  width: 100%;
+}
+}
+
+@media (min-width: 1201px) and (max-width:1320px) {
   
 .Short-parent .slider-wrapper{
   width: 100%;
@@ -98,7 +112,20 @@
   height: 800px;
   overflow: hidden;
 }
+@media (min-width: 769px) and (max-width:1200px) {
+  
+.slider-wrapper .slider-parent .card .card-img {
+  height: 500px;
+ 
+}
+}
 
+@media (min-width: 1201px) and (max-width:1320px) {
+  
+.slider-wrapper .slider-parent .card .card-img {
+  height: 500px;
+}
+}
 
 @media (max-width:767px) {
   .slider-wrapper .slider-parent .card .card-img {
@@ -128,7 +155,7 @@ margin: 30px;
 }
 
 
-@media (max-width:767px) {
+@media (max-width:1200px) {
   .slider-wrapper .slider-parent .card .card-layer .reel img{
     width: 35px;
     height: 35px;
@@ -143,7 +170,7 @@ margin: 30px;
   transform: translate(-50%,-50%);
 }
 
-@media (max-width:767px) {
+@media (max-width:1200px) {
   .slider-wrapper .slider-parent .card .card-layer .vid img{
     width: 48px;
     height: 48px;
@@ -168,6 +195,20 @@ margin: 30px;
 
   .slider-wrapper .slider-parent .card .card-layer .card-title span{
     font-size: 14px;
+
+  }
+}
+
+@media (min-width: 769px) and (max-width:1200px){
+   .slider-wrapper .slider-parent .card .card-layer .card-title h1{
+   font-size: 22px;
+    white-space: nowrap;
+
+  }
+
+  .slider-wrapper .slider-parent .card .card-layer .card-title span{
+    font-size: 16px;
+    white-space: nowrap;
 
   }
 }

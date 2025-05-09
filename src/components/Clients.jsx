@@ -1,6 +1,5 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
-import React from "react";
 import SectionTitle from "./SectionTitle";
 import "../style/Clients.css";
 export default function Clients() {
@@ -39,11 +38,11 @@ export default function Clients() {
               </div>
             </div>
             <div className="box-pagination">
-              <span class="material-symbols-outlined">arrow_left_alt</span>
+              <span className="material-symbols-outlined">arrow_left_alt</span>
               <h4 className="pag1">01</h4>
               <div className="slash">/</div>
               <h4 className="pag2">20</h4>
-              <span class="material-symbols-outlined">arrow_right_alt</span>
+              <span className="material-symbols-outlined">arrow_right_alt</span>
             </div>
           </div>
         </div>

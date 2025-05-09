@@ -1,8 +1,18 @@
 .clients {
   /* background-color: rgb(214, 214, 214); */
   padding: 20px;
-  width: 1160px;
+  max-width: 1160px;
+  width: 100%;
   margin: auto;
+}
+
+@media (max-width:767px) {
+  .clients {
+ /* height:284px; */
+ margin: 0 !important;
+/* background-color: azure; */
+padding:0;
+}
 }
 
 .clients-info {
@@ -10,6 +20,13 @@
   padding: 20px;
   display: flex;
   gap: 88px;
+}
+
+@media (max-width:767px){
+  .clients-info {
+    gap: 16px;
+    /* background-color: aquamarine; */
+  }
 }
 
 .clients-info .quote1 {
@@ -24,6 +41,16 @@ align-items: center;
 margin-top: 2px;
 }
 
+@media (max-width:767px){
+  
+.clients-info .quote1 {
+  width: 36px;
+  height:36px;
+  font-size: 20px;
+margin-left: -20px;
+}
+}
+
 
 .clients-info .clients-content-parent {
   /* background-color: rgb(141, 160, 139); */
@@ -32,6 +59,7 @@ margin-top: 2px;
   flex-direction: column;
   gap: 40px;
 }
+
 
 .clients-info .clients-content-parent .clients-content {
   /* background-color: rgb(15, 15, 16); */
@@ -42,9 +70,20 @@ margin-top: 2px;
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
+  letter-spacing: 1px;
   color: #7c8893;
   text-transform: capitalize;
 }
+@media (max-width:767px){
+
+.clients-info .clients-content-parent{
+  gap: 16px;
+}
+.clients-info .clients-content-parent .clients-content p {
+font-size: 14px;
+}
+}
+
 
 .clients-info .clients-content-parent .box-customer {
   /* background-color: rgb(137, 182, 93); */
@@ -99,6 +138,35 @@ margin-top: 2px;
   color: #0d263b;
 }
 
+@media (max-width:767px){
+
+  .clients-info .clients-content-parent .box-customer .box-quote2 .quote2 {
+  width: 36px;
+  height: 36px;
+}
+
+.clients-info
+  .clients-content-parent
+  .box-customer
+  .box-quote2
+  .box-title
+  span:nth-of-type(1) {
+  font-family: "inter";
+  font-weight: 500;
+  font-size: 14px;
+white-space: nowrap;
+}
+.clients-info
+  .clients-content-parent
+  .box-customer
+  .box-quote2
+  .box-title
+  span:nth-of-type(2) {
+  font-size: 13px;
+}
+
+}
+
 .clients-info .clients-content-parent .box-customer .box-pagination {
   display: flex;
   align-items: center;
@@ -127,4 +195,25 @@ margin-top: 2px;
   font-family: "Lato";
   font-size: 32px;
   text-transform: uppercase;
+}
+
+
+
+@media (max-width:767px){
+
+  .clients-info .clients-content-parent .box-customer .box-pagination .pag1 {
+
+  font-size: 16px;
+
+}
+.clients-info .clients-content-parent .box-customer .box-pagination .pag2 {
+  font-size: 16px;
+
+}
+
+.clients-info .clients-content-parent .box-customer .box-pagination .slash {
+  font-size: 16px;
+
+}
+
 }

@@ -58,12 +58,12 @@ export default function Projects() {
         <button>
           <a href="#">
             See all projects
-            <span class="material-symbols-outlined">arrow_right_alt</span>
+            <span className="material-symbols-outlined">arrow_right_alt</span>
           </a>
         </button>
       </div>
       {/* ----------Projects Show------------------------------- */}
-      <div className="projects_show">
+      <div className="projects-container">
         <div className="proj_show-btns">
           <button onClick={shiftPrev}>
             <span className="material-symbols-outlined">arrow_back</span>
@@ -72,6 +72,7 @@ export default function Projects() {
             <span className="material-symbols-outlined">arrow_forward</span>
           </button>
         </div>
+        <div className="projects_show">
         <div className="projects-show-wrapper">
           <div className="projects-show-parent" css={sliderStyle}>
             {dataSlider.map((img, idx) => (
@@ -82,7 +83,7 @@ export default function Projects() {
                 <div className="proj_show_title">
                   <p>O7 MALL - O7</p>
                   <div className="location">
-                    <span class="material-symbols-outlined">location_on</span>
+                    <span className="material-symbols-outlined">location_on</span>
                     <span>New Damietta</span>
                   </div>
                 </div>
@@ -90,6 +91,7 @@ export default function Projects() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

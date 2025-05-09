@@ -43,3 +43,13 @@ text-align: center;
 
 }
 }
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+   
+.section_title h2{
+    width: 450px;
+    font-size:30px;
+}
+}

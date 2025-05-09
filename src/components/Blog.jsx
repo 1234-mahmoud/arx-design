@@ -59,7 +59,6 @@ export default function Blog() {
   return (
     <div className='Blog'>
         <SectionTitle main_title="our blog" secondary_title="latest news feeds"/>
-        <div className="latest-news">
 
             <div className="latest-news-btns">
               <button onClick={shiftPrev}>
@@ -69,6 +68,7 @@ export default function Blog() {
                 <span className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
+        <div className="latest-news">
     
             <div className="latest-news-wrapper">
               <div className="latest-news-parent" css={sliderStyle}>

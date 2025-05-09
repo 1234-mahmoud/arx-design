@@ -7,17 +7,43 @@
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .counter {
+    width: 38px;
+  }
+}
+
 .counter .plus_symb {
-margin-bottom: 30px;
-margin-left: 5px;
+  margin-bottom: 30px;
+  margin-left: 5px;
   color: orange;
   font-size: 20px;
   font-weight: bolder;
 }
 
-.counter h2.counter-num{
-    color:white;
-    font-family: 'Cinzel';
-    font-weight: 700;
-    font-size: 48px;
+.counter h2.counter-num {
+  color: white;
+  font-family: "Cinzel";
+  font-weight: 700;
+  font-size: 48px;
+}
+
+@media (max-width: 767px) {
+  .counter h2.counter-num {
+    font-size: 32px;
+  }
+
+  
+  .counter .plus_symb {
+    
+    font-size: 40px;
+    
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width:1200px) {
+.counter h2.counter-num {
+  font-size: 40px;
+}
 }

@@ -1,16 +1,30 @@
 .stats {
-  /* background-color: bisque; */
   height: 625px;
+  width: 100%;
   padding: 48px 1px;
   position: relative;
+  overflow: hidden;
 }
 
 .stats .stats-numbers {
   position: relative;
   height: 370px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .stats .stats-numbers {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .stats .stats-numbers {
+    flex-wrap: wrap;
+  }
 }
 
 .stats .stats-numbers .stats-background {
@@ -21,24 +35,50 @@
 }
 
 .stats .stats-numbers .stat_box {
-  width: 1250px;
+  max-width: 1250px;
+  width: 100%;
   position: absolute;
-  /* background-color: white; */
   display: flex;
   justify-content: center;
   gap: 30px;
+  /* background-color: rgba(0, 128, 0, 0.305); */
 }
-
+@media (max-width: 767px) {
+  .stats .stats-numbers .stat_box {
+    flex-wrap: wrap !important;
+    gap: 16px;
+  }
+}
 .stats .stats-numbers .stat_box .stat_label {
   position: relative;
   /* background-color: rgb(82, 82, 212); */
-  width: 265px;
+  max-width: 265px;
+  width: 100%;
   height: 112px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+.stats .stats-numbers .stat_box .stat_label:not(:last-child) {
+  /* border-right: 2px solid white; */
+  padding-right: 48px;
+}
+
+@media (min-width:768px) {
+  .stats .stats-numbers .stat_box .stat_label:not(:last-child) {
+  border-right: 2px solid white;}
+}
+
+@media (max-width: 991px) {
+  .stats .stats-numbers .stat_box .stat_label {
+    width: 170px;
+    height: 108px;
+    /* background-color: aqua; */
+    gap: 4px;
+  }
 }
 
 .stats .stats-numbers .stat_box .stat_label p {
@@ -48,37 +88,82 @@
   text-transform: capitalize;
   color: #c4c4c4;
 }
+
+@media (max-width: 767px) {
+  .stats .stats-numbers .stat_box .stat_label p {
+    font-size: 15px;
+    width: 114px;
+    height: 48px;
+    text-align: center;
+  }
+
+  .stats .stats-numbers .stat_box .stat_label:nth-child(odd) {
+    /* background-color: bisque; */
+    border-right: 2px solid white;
+    padding-right: 48px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .stats .stats-numbers .stat_box .stat_label p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+/* 
+
 .stats .stats-numbers .stat_box .stat_label:not(:last-child)::after {
   content: "";
   position: absolute;
   right: 0;
   top: 0;
-  margin-right: -16px; /* the difference of gap ⬆️*/
+  margin-right: -16px; 
   width: 2px;
   height: 100%;
   background-color: rgb(255, 255, 255);
+} */
+
+.stats .partners {
+  max-width: 800px;
+  width: 100%;
+  height: 200px;
+  background-color: #f4f5f6;
+  z-index: 20;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  padding: 56px;
+  border-radius: 4px;
 }
 
-.stats .partners{
-    width: 800px;
-    height: 200px;
-    background-color: #F4F5F6;
-    z-index:20;
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:56px;
-    padding: 56px;
-    border-radius: 4px;
+.stats .partners img {
+  width: 195px;
+  height: 105px;
 }
 
-.stats .partners img{
-    width: 195px;
-    height: 105px;
+@media (max-width: 767px) {
+  .stats .partners {
+    width: 336px;
+    height: 86px;
+    gap: 8px;
+    bottom: 130px;
+  }
+  .stats .partners img {
+    width: 98px;
+    height: 54px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .stats .partners {
+    bottom: 90px;
+  }
 }
