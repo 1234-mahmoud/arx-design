@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <Slider/> */}
+      <Slider/>
       <About_us/>
       <Shorts/>
       <Services/>
