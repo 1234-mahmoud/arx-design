@@ -51,6 +51,8 @@ export default function Slider() {
                <div className="circles"></div>
                <div className="circles"></div>
                <div className="circles"></div>
+
+               <div className="animated_line"></div>
             </span>
           ))}
         </div>
