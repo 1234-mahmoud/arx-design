@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  height: 64px;
+  background: rgba(38, 39, 40, 0.96);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 109px;
+  /* position: relative; */
+    position: fixed;
+  z-index: 200;
+}
+
+.header .header-container {
+  width: 100%;
+  padding: 0 50px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    
+.header .header-container {
+    padding: 20px;
+}
+}
+
+
+
+
+.header .header-container .header-logo {
+  width: 104px;
+  height: 48px;
+}
+
+.header .header-container .header-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header .header-container .list_icon{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:991px) {
+    .header .header-container .list_icon{
+        display: block;
+    }
+}
+
+
+.header .header-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: brown; */
+  gap: 30px;
+}
+
+
+
+.header .header-container nav ul {
+  display: flex;
+  gap: 48px;
+}
+
+@media (min-width:992px) and (max-width:1200px){
+
+.header .header-container nav ul {
+    /* gap: 30px; */
+}
+}
+
+@media (max-width: 991px) {
+  .header .header-container nav {
+    flex-direction: column !important;
+    justify-content: flex-start;
+    background-color: rgb(33, 33, 33);
+    position: fixed;
+    left:0;
+    top: 64px;
+    height: 100vh;
+    width: 200px;
+    padding: 20px 0;
+    transform: translateX(-100%);
+    transition: transform .5s linear;
+  }
+  .header .header-container nav ul {
+    flex-direction: column;
+  }
+
+  .header .header-container .show-nav{
+transform: translateX(0);
+  }
+}
+
+.header .header-container nav ul li .header_nav_link {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+
+
+.header .header-container nav .lang {
+  padding: 4px;
+  width: 104px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header-container nav .lang select {
+  background-color: rgba(0, 0, 0, 0.415);
+  color: white;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
