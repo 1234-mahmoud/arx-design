@@ -19,7 +19,7 @@ export default function Home() {
       <Projects/>
       <Blog/>
       <Clients/>
-      <Footer/>  
+      <Footer show={true}/>  
     </div>
   )
 }

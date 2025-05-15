@@ -1,0 +1,100 @@
+.summary {
+  position: relative;
+  width: 100%;
+  height: 387px;
+  background-image: linear-gradient(
+      to right,
+      rgba(6, 11, 14, 0.472) 65%,
+      rgba(255, 255, 255, 0.528) 35%
+    ),
+    url("../assets/mall_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary .summary-info {
+  width: 100%;
+  max-width: 587px;
+  height: 180px;
+}
+
+@media (min-width:1200px) {
+    .summary .summary-info {
+  transform: translateX(250px);
+    }
+}
+
+.summary .summary-info p {
+  color: black;
+  text-align: center;
+}
+
+.summary .summary-info p:nth-of-type(1) {
+  font-family: "Cinzel";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 57%,
+    rgb(0, 0, 0) 43%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.summary .summary-info p:nth-of-type(2) {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 60%,
+    rgb(0, 0, 0) 40%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  height: 80px;
+}
+
+@media (max-width: 767px) {
+  .summary .summary-info {
+    transform: translateX(0);
+  }
+
+  .summary .summary-info p:nth-of-type(1) {
+  font-size: 36px;
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 60%,
+      rgb(0, 0, 0) 40%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .summary .summary-info p:nth-of-type(2) {
+  font-size: 16px;
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 70%,
+      rgb(0, 0, 0) 30%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}

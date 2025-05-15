@@ -6,11 +6,11 @@ import React from "react";
 import "../style/Footer.css";
 import logo from "../assets/footer_logo.png";
 import Subscription from '../components/Subscribtion'
-export default function Footer() {
+export default function Footer({show}) {
   return (
    <div className="footer-box">
      <div className="footer">
-    <Subscription className='footer-sub'/>
+    {show && <Subscription className='footer-sub'/>}
       <div className="box-col">
         <div className="col-logo">
           <ul>

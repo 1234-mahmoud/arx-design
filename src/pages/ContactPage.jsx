@@ -8,7 +8,8 @@ export default function ContactPage() {
 
 const containerStyle = {
   width: '100%',
-  height: '400px'
+  maxWidth:'100',
+  height: '400px',
 };
 
 const center = {
@@ -47,7 +48,7 @@ const center = {
     </LoadScript>
 </div>
 
-<Footer/>
+<Footer show={false}/>
 
     </div>
   );

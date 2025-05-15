@@ -10,7 +10,7 @@ box-shadow: 5px 7px 16px rgba(241, 243, 243, 1);
   border-radius: 24px;
 }
 
-@media (max-width:767px){
+@media (max-width:991px){
     .contact-comp{
         margin: 0;
         height: 100%;

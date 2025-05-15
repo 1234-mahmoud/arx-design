@@ -3,7 +3,7 @@ import "../style/Header.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import eng from "../assets/Eng.svg";
-export default function Header() {
+export default function Header({className}) {
 
   const [show,setShow] = useState(false)
   const toggle=()=>{
@@ -11,7 +11,7 @@ setShow(!show)
   }
 
   return (
-    <div className="header">
+    <div className={`header`}>
       <div className="header-container">
         <div className="header-logo">
           <img src={logo} alt="logo" />
