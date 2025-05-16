@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import React from "react";
 import "../style/Counter.css";
-export default function Counter({ end }) {
+export default function Counter({ end , className }) {
   const [count, setCount] = useState(0);
   const intervalRef = useRef(null);
 
@@ -25,7 +25,7 @@ export default function Counter({ end }) {
 
   return (
     <div className="counter">
-      <h2 className="counter-num">{count > 999 ? (count / 1000).toFixed(1) + "k" : count}</h2>
+      <h2 className={`counter-num ${className}`}>{count > 999 ? (count / 1000).toFixed(1) + "k" : count}</h2>
       <span className="material-symbols-outlined plus_symb">add</span>
 
     </div>
