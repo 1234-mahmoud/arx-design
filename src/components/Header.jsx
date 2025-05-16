@@ -53,6 +53,11 @@ setShow(!show)
                 Join As Affiliate
               </Link>
             </li>
+              <li>
+              <Link className="header_nav_link" to="QuestionPage">
+                FAQS
+              </Link>
+            </li>
           </ul>
           <div className="lang">
             <select name="" id="">

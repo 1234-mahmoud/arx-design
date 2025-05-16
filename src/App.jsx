@@ -8,6 +8,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 import JoinPage from "./pages/JoinPage";
+import QuestionPage from "./pages/QuestionPage";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
             <Route path="/BlogPage" element={<BlogPage />} />
             <Route path="/ContactPage" element={<ContactPage />} />
             <Route path="/JoinPage" element={<JoinPage />} />
+            <Route path="/QuestionPage" element={<QuestionPage />} />
           
         </Routes>
       </BrowserRouter>
