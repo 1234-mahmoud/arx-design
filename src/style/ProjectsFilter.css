@@ -1,0 +1,73 @@
+.proj-filter{
+    width: 100%;
+    max-width: 886;
+    height: 480px;
+    position: relative;
+}
+
+.proj-filter img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+.proj-filter .search-box-filter{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+/* background-color: rgb(9, 96, 96); */
+height: 176px;
+width: 100%;
+max-width: 798px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+
+.proj-filter .search-box-filter h1{
+    color: white;
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    
+}
+
+.proj-filter .search-box-filter .search-filter{
+    padding: 0 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+    height: 88px;
+    border-radius: 50px;
+}
+.proj-filter .search-box-filter .search-filter input{
+    width: 80%;
+    border: none;
+    border-radius: 50px;;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: rgba(73, 77, 80, 1);
+
+}
+.proj-filter .search-box-filter .search-filter input:focus{
+    outline: none;
+}
+
+.proj-filter .search-box-filter .search-filter .serch-filter-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 24px;
+}
