@@ -3,6 +3,7 @@ import "../style/VidBlog.css";
 import pic1 from "../assets/prim1.png";
 import pic2 from "../assets/prim2.png";
 import pic3 from "../assets/prim3.png";
+import { Link } from "react-router-dom";
 export default function VidBlog() {
   return (
     <div className="vid-blog">
@@ -27,9 +28,11 @@ export default function VidBlog() {
             <div className="sub-vid-1">
               <img src={pic2} alt="" />
               <div className="vid-blog-layer">
+               <Link to='/OneBlog'>
                 <span className="material-symbols-outlined vid-play">
                   play_circle
                 </span>
+               </Link>
               </div>
             </div>
             <div className="sub-vid-2">
