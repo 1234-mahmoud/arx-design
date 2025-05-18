@@ -35,6 +35,7 @@
   height: 640px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 @media (max-width:767px) {
     .land-slide .land-parent {

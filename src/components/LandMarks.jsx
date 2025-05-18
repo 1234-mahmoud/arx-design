@@ -59,32 +59,28 @@ export default function LandMarks() {
         </div>
       </div>
 
-
-
       {/* Pagination with original pics length */}
       <div className="pagination">
-            <span class="material-symbols-outlined" onClick={shiftPrev}>
-chevron_left
-</span>
+        <span class="material-symbols-outlined" onClick={shiftPrev}>
+          chevron_left
+        </span>
 
         {Array.from({ length: pics.length }).map((_, i) => (
           <span
             key={i}
-            className={
-             `
+            className={`
              pagination-num
               ${i === count % pics.length ? "active" : ""} 
-             `
-            }
+             `}
             onClick={() => setCount(i)}
-          >{i}</span>
+          >
+            {i}
+          </span>
         ))}
         <span class="material-symbols-outlined" onClick={shiftNext}>
-chevron_right
-</span>
+          chevron_right
+        </span>
       </div>
     </div>
   );
 }
-
-

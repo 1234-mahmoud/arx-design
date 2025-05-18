@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     <div className='projects-comp'>
       <PrrojectsFilter/>
       <LandMarks/>
-      <Footer/>
+      <Footer show={true}/>
     </div>
   )
 }
