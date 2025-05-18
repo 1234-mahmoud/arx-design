@@ -39,7 +39,7 @@ export default function SliderProjects() {
     <div className="slider-proj-parent">
       <div className="slider-proj-btns">
         <button onClick={shiftNext}>
-       <span class="material-symbols-outlined">
+       <span className="material-symbols-outlined">
 double_arrow
 </span>
         </button>

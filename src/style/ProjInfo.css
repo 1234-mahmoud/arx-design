@@ -1,0 +1,68 @@
+.Proj-info{
+    width: 100%;
+    max-width: 1193px;
+    height: 384px;
+    margin:50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+@media (max-width:767px) {
+    .Proj-info{
+        margin:50px 0;
+        height: 100%;
+    }
+}
+
+.Proj-info h3{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.Proj-info p{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.Proj-info .proj-info-btns{
+    width: 100%;
+    max-width: 800px;
+    height: 72px;
+    padding: 24px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.Proj-info .proj-info-btns button{
+    width: 100%;
+    max-width: 364px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+     font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.Proj-info .proj-info-btns button:nth-of-type(1){
+    background-color: rgba(3, 91, 141, 1);
+    color: white;
+}
+.Proj-info .proj-info-btns button:nth-of-type(2){
+    border: 1px solid  rgba(3, 91, 141, 1);
+    color:  rgba(3, 91, 141, 1);
+    background-color: transparent;
+}
