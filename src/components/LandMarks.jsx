@@ -9,6 +9,7 @@ import pic2 from "../assets/prim2.png";
 import pic3 from "../assets/prim3.png";
 import pic4 from "../assets/mall_1.png";
 import pic5 from "../assets/mall_2.png";
+import { Link } from "react-router-dom";
 
 export default function LandMarks() {
   const pics = [pic1, pic2, pic3, pic4, pic5, pic1, pic2, pic3, pic4];
@@ -51,10 +52,12 @@ export default function LandMarks() {
       <div className="land-slide">
         <div className="land-parent">
           {pics_one_slide[count].map((img, i) => (
+          <Link to='/OneProject'>
             <div className="land-slide" key={i}>
               <img src={img} alt="" />
               <h3>Axiom Tower</h3>
             </div>
+          </Link>
           ))}
         </div>
       </div>

@@ -10,6 +10,7 @@ import ContactPage from "./pages/ContactPage";
 import JoinPage from "./pages/JoinPage";
 import QuestionPage from "./pages/QuestionPage";
 import OneBlog from "./components/OneBlog";
+import OneProject from "./components/OneProject";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
             <Route path="/JoinPage" element={<JoinPage />} />
             <Route path="/QuestionPage" element={<QuestionPage />} />
             <Route path="/OneBlog" element={<OneBlog />} />
+            <Route path="/OneProject" element={<OneProject />} />
           
         </Routes>
       </BrowserRouter>
