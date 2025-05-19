@@ -2,7 +2,6 @@ import { AiFillYoutube } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import React from "react";
 import { Link } from "react-router-dom";
 import "../style/Footer.css";
 import logo from "../assets/footer_logo.png";
@@ -57,27 +56,29 @@ export default function Footer({ show }) {
                 </Link>
               </li>
               <li>
-                <Link className="header_nav_link" to="About">
+                <Link className="header_nav_link" to="/About">
                   about us
                 </Link>
               </li>
               <li>
-                <Link className="header_nav_link" to="ServicesPage">
+                <Link className="header_nav_link" to="/ServicesPage">
                   services
                 </Link>
               </li>
               <li>
-                <Link className="header_nav_link" to="BlogPage">
+                <Link className="header_nav_link" to="/BlogPage">
                   blog
                 </Link>
               </li>
               <li>
-                <Link className="header_nav_link" to="QuestionPage">
+                <Link className="header_nav_link" to="/QuestionPage">
                   FAQS
                 </Link>
               </li>
               <li>
-                <a href="#">privacy policy</a>
+                <Link className="header_nav_link" to="/PrivacyPolicy">
+                  privacy policy
+                </Link>
               </li>
             </ul>
           </div>

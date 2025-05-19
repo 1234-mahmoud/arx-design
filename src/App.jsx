@@ -11,6 +11,7 @@ import JoinPage from "./pages/JoinPage";
 import QuestionPage from "./pages/QuestionPage";
 import OneBlog from "./components/OneBlog";
 import OneProject from "./components/OneProject";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
             <Route path="/QuestionPage" element={<QuestionPage />} />
             <Route path="/OneBlog" element={<OneBlog />} />
             <Route path="/OneProject" element={<OneProject />} />
+            <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           
         </Routes>
       </BrowserRouter>

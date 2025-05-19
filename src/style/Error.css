@@ -1,0 +1,48 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.error h1 {
+    font-family: 'Lato';
+  font-size: 200px;
+  text-align: center;
+  font-weight: bold;
+  background: url("../assets/short3.png") center center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error p:nth-of-type(1){
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.error p:nth-of-type(2){
+    width: 100%;
+    max-width: 700px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.error button{
+    background-color: #03598a;
+    width:190px;
+  padding: 15px;
+  border:none;
+  border-radius: 8px;
+
+}
+.error button .error-link{
+    color: white;
+}
