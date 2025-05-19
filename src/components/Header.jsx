@@ -24,12 +24,12 @@ setShow(!show)
               </Link>
             </li>
             <li>
-              <Link className="header_nav_link" to="/About">
+              <Link className="header_nav_link" to="About">
                 About Us
               </Link>
             </li>
             <li>
-              <Link className="header_nav_link" to="/ServicesPage">
+              <Link className="header_nav_link" to="ServicesPage">
                 Services
               </Link>
             </li>

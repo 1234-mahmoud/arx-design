@@ -77,7 +77,7 @@ height: 100%;
   filter: brightness(70%);
 }
 
-.pagination {
+.slider-proj-pagination {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -86,7 +86,7 @@ height: 100%;
   transform: rotate(-90deg);
 }
 
-.pagination span {
+.slider-proj-pagination span {
   width: 16px;
   height: 16px;
   margin: 0 5px;
@@ -97,7 +97,7 @@ height: 100%;
   transition: width 0.3s ease-in-out;
 }
 
-.pagination span.active {
+.slider-proj-pagination span.active {
      width: 40px;
   height: 20px;
   border-radius: 20px;

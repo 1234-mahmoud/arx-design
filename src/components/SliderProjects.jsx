@@ -57,7 +57,7 @@ double_arrow
         </div>
       </div>
         {/* Pagination with original pics length */}
-        <div className="pagination">
+        <div className="slider-proj-pagination">
           {Array.from({ length: pics.length }).map((_, i) => (
             <span
               key={i}

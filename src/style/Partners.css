@@ -1,4 +1,4 @@
-.partners {
+.partners-firms {
   width: 100%;
   height: 368px;
   background-color: bisque;
@@ -14,12 +14,12 @@
 }
 
 @media (max-width:991px) {
-    .partners{
+    .partners-firms{
         flex-direction: column;
         gap: 16px;
     }
 }
-.partners .partners-title {
+.partners-firms .partners-title {
     position: relative;
 width: 100%;
 max-width: 644px;
@@ -29,7 +29,7 @@ flex-direction: column;
 gap: 8px;
 }
 
-.partners .partners-title h1 {
+.partners-firms .partners-title h1 {
     color: white;
     font-family: 'Cinzel';
     font-weight: 700;
@@ -37,23 +37,23 @@ gap: 8px;
     line-height: 64px;
 }
 
-.partners .partners-title h1 span {
+.partners-firms .partners-title h1 span {
     color: goldenrod;
 }
 
-.partners .partners-title h1:nth-of-type(1) {
+.partners-firms .partners-title h1:nth-of-type(1) {
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.partners .partners-title h1:nth-of-type(2) {
+.partners-firms .partners-title h1:nth-of-type(2) {
         position: absolute;
     right:130px;
     bottom: 0;
 }
 
-.partners .partners-comp {
+.partners-firms .partners-comp {
     width: 100%;
     max-width: 625px;
     height: 126px;
@@ -64,13 +64,13 @@ gap: 8px;
     border-radius: 16px;
 }
 
-.partners .partners-comp .partner-img {
+.partners-firms .partners-comp .partner-img {
   width: 192px;
   height: 104px;
   overflow: hidden;
 }
 
-.partners .partners-comp .partner-img img {
+.partners-firms .partners-comp .partner-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;

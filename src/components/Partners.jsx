@@ -5,7 +5,7 @@ import pic2 from "../assets/comp2.png";
 import pic3 from "../assets/comp3.png";
 export default function Partners() {
   return (
-    <div className="partners">
+    <div className="partners-firms">
       <div className="partners-title">
         <h1>
           <span>our</span> success
