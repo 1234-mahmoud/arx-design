@@ -40,6 +40,10 @@ gap: 24px;
     line-height: 40px;
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
+justify-content: center;
+align-items: center;
+gap:8px;
 }
 
 .building-info .building-details .building-btns-box1 button.active{
@@ -101,6 +105,10 @@ line-height: 40px;
 letter-spacing: 1px;
 text-transform: capitalize;
 color: rgba(6, 11, 14, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+gap:8px;
 }
 
 .building-info .building-details .specifications span.specifications-val{
