@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 .parent {
-  margin-top: 64px;
   width: 100%;
   height: 100vh;
-  background-color: rgb(220, 216, 216);
   position: relative;
   display: flex;
   justify-content: center;
@@ -27,10 +25,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(0.6);
+  filter: brightness(60%);
 }
 
 .slider-wrapper .card-img .slide_txt {
+  width: 100%;
+  max-width: 1100px;
   font-family: "Cinzel";
   font-weight: 700;
   line-height: 120px;
@@ -42,8 +42,35 @@
   color: transparent; /* fallback */
   z-index: 30;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 70px;
+  left: 100px;
+}
+
+@media (max-width:767px) {
+  .slider-wrapper .card-img .slide_txt {
+  line-height: 64px;
+  font-size:40px;
+  top: 100px;
+  left: 10px;
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .slider-wrapper .card-img .slide_txt {
+  line-height: 64px;
+  font-size:48px;
+  top: 100px;
+  left: 10px;
+}
+}
+
+@media (min-width:992px) and (max-width:1380px) {
+  .slider-wrapper .card-img .slide_txt {
+  line-height: 100px;
+  font-size:80px;
+  top: 70px;
+  left: 50px;
+}
 }
 
 /* ----------------------------------------------------------------- */
@@ -53,22 +80,57 @@
   height: 160px;
   width: 660px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   gap: 24px;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 45%;
   margin-right: -180px;
   transform: translate(-50%, -50%);
   transform: rotate(-270deg);
   z-index: 20;
 }
+
+@media (max-width:767px) {
+ .parent .pagination {
+  height:131px;
+  width: 224px;
+  right: 0;
+  margin-right:-50px;
+}
+}
+
+
+@media (min-width:992px) and (max-width:1380px) {
+ .parent .pagination {
+  height:200px;
+  width: 500px;
+  right: 0;
+  top: 35%;
+  margin-right:-50px;
+}
+}
+
+
 .parent .pagination span .slide-info {
   display: none;
   color: white;
   font-weight: 700;
+  position: relative;
 }
+
+
+.parent .pagination span .slide-info::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left:-15px;
+  width: 2px;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+}
+
 
 .parent .pagination span .slide-info h1 {
   font-family: "Cinzel";
@@ -96,6 +158,43 @@
   z-index: 5;
 }
 
+@media (max-width:767px) {
+.parent .pagination span .slide-info h1 {
+  font-size: 16px;
+}
+
+.parent .pagination span .slide-info p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.parent .pagination span.active .slide-info {
+  gap: 8px;
+  height:192px;
+  width:244px;
+  top:100%;
+  left:-35px;
+}
+}
+@media (min-width:768px) and (max-width:991px) {
+.parent .pagination span.active .slide-info {
+  gap: 8px;
+  height:350px;
+  width:350px;
+  top:100%;
+  left:-35px;
+  margin: 100px 70px;
+}
+}
+
+@media (min-width:992px) and (max-width:1380px) {
+.parent .pagination span.active .slide-info {
+  height: 300px;
+left: -100px;
+}
+}
+
+
 .parent .pagination span {
   position: relative;
   width: 160px;
@@ -107,6 +206,21 @@
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }
+
+@media (max-width:767px) {
+.parent .pagination span {
+  width:48px;
+  height: 48px;
+}
+}
+
+@media (min-width:992px) and (max-width:1380px) {
+.parent .pagination span {
+  width:120px;
+  height: 120px;
+}
+}
+
 
 .parent .circle {
   width: 100%;
@@ -129,6 +243,21 @@
   position: absolute;
   z-index: -1;
 }
+
+@media (max-width:767px) {
+.parent .circle .circles {
+  width: 100px;
+  height: 100px;
+}
+}
+
+@media (min-width:992px) and (max-width:1380px) {
+.parent .circle .circles {
+  width: 250px;
+  height: 250px;
+}
+}
+
 
 .parent span.active .circle .circles:nth-of-type(1) {
   background-color: rgba(255, 255, 255, 0.25);
@@ -154,9 +283,30 @@
 }
 
 .parent span.active .circle .circles:nth-of-type(5) {
-  background-color: rgba(255, 255, 255, 0.22);
+  background-color: rgba(255, 255, 255, 0.25);
 
   transform: translate(0);
+}
+@media (max-width:767px) {
+.parent span.active .circle .circles:nth-of-type(1) {
+  transform: translateX(10px)
+}
+
+.parent span.active .circle .circles:nth-of-type(2) {
+  transform: translateX(-10px);
+}
+
+.parent span.active .circle .circles:nth-of-type(3) {
+  transform: translateY(-10px);
+}
+
+.parent span.active .circle .circles:nth-of-type(4) {
+  transform: translateY(10px);
+}
+
+.parent span.active .circle .circles:nth-of-type(5) {
+  transform: translate(0);
+}
 }
 
 .parent .pagination span img {
@@ -164,6 +314,13 @@
   height: 160px;
   border-radius: 50%;
   transform: rotate(-90deg);
+}
+@media (max-width:767px) {
+
+.parent .pagination span img {
+  width: 48px;
+  height: 48px;
+}
 }
 
 .parent .pagination span.active {
@@ -175,6 +332,14 @@
 .parent .pagination span.active img {
   width: 256px;
   height: 256px;
+}
+
+@media (max-width:767px) {
+
+.parent .pagination span.active img {
+  width:80px;
+  height:80px;
+}
 }
 
 .parent .pagination span.active .animated_line {
@@ -189,7 +354,6 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   z-index: -1;
-
 }
 
 @keyframes line_smooth {
@@ -200,10 +364,9 @@
 
   50% {
     height: 200px;
-
   }
 
-  75%{
+  75% {
     height: 200px;
   }
 

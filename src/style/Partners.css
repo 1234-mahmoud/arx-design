@@ -29,12 +29,20 @@ flex-direction: column;
 gap: 8px;
 }
 
+
 .partners-firms .partners-title h1 {
     color: white;
     font-family: 'Cinzel';
     font-weight: 700;
     font-size: 56px;
     line-height: 64px;
+}
+
+@media (max-width:991px) {
+.partners-firms .partners-title h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
 }
 
 .partners-firms .partners-title h1 span {

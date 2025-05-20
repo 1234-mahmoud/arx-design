@@ -28,7 +28,7 @@
   gap: 16px;
 }
 
-@media (max-width:767) {
+@media (max-width:767px) {
   .directors .dir-cards {
     flex-wrap: wrap;
     justify-content: center;
@@ -36,11 +36,9 @@
   }
 }
 
-@media (min-width:768px) and (max-width:991px){
+@media (min-width:768px) and (max-width:1380px){
   .directors .dir-cards {
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
   }
 }
 

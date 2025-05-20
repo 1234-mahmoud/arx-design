@@ -18,14 +18,14 @@
   }
   
   .Blog .latest-news-btns {
-    width:calc(100% - 150px);
+    width:100%;
     /* background-color: rgb(12, 85, 189); */
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     position: absolute;
     top: 50%;
-    left:75px;
+    /* left:75px; */
     z-index: 30;
   }
 
