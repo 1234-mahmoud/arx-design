@@ -77,6 +77,8 @@ align-items: center;
 
 
 
+
+
 .vision-comp .vision-card .info{
     display: flex;
     flex-direction: column;
@@ -121,6 +123,15 @@ align-items: center;
 }
 }
 
+
+@media (min-width:992px) and (max-width:1200px) {
+
+
+.vision-comp .vision-card:nth-of-type(odd) .info h2::before {
+ content: none;
+    display: none;
+}
+}
 
 .vision-comp .vision-card .info p{
     width: 100%;
