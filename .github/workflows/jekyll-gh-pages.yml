@@ -36,7 +36,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      # ← Add this step to fix SPA routing 404 error
       - name: Copy index.html to 404.html for SPA fallback
         run: cp dist/index.html dist/404.html
 
