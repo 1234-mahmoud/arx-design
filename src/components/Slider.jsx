@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import "../style/Slider.css";
 import home_img1 from "../assets/home_img.png";
 import home_img2 from "../assets/slide_2.jpg";
@@ -7,7 +7,7 @@ import home_img3 from "../assets/slide_3.png";
 export default function Slider() {
   const slide_data = [
     {
-      main_title:'find the best to you',
+      main_title: "find the best to you",
       img: home_img1,
       title: "AURA MALL",
       description: `  AURA MALL In the most distinguished areas 
@@ -15,7 +15,7 @@ export default function Slider() {
       the second district, plot No. 10, near Al-Saidi Street,`,
     },
     {
-      main_title:'New Administrative Capital',
+      main_title: "New Administrative Capital",
       img: home_img2,
       title: "Kentro Tower",
       description: `New Administrative Capital - Downtown Plot NO. MU5-39, 
@@ -23,7 +23,7 @@ export default function Slider() {
                 (Commercial - Medical - Offices) Consists Of 15 Mixed-Used Floors. `,
     },
     {
-      main_title:'Looking for a new house?',
+      main_title: "Looking for a new house?",
       img: home_img3,
       title: "UNI 1",
       description: `UNI Project Series A Group Of UNI Projects 
@@ -79,7 +79,6 @@ export default function Slider() {
                 <h1>{slide.title}</h1>
                 <p>{slide.description}</p>
               </div>
-
               {<div className="animated_line"></div>}
             </span>
           </div>

@@ -4,7 +4,7 @@
 }
 @media (max-width:991px) {
     .proj-locations{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 .proj-locations .admin-cap {
