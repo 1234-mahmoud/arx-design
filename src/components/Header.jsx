@@ -1,36 +1,41 @@
 import React, { useState } from "react";
-import Select from "react-select";
+import Select from 'react-select';
 import "../style/Header.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import eng from "../assets/Eng.svg";
-import ar from "../assets/eg.png";
-export default function Header({ className }) {
-  const [show, setShow] = useState(false);
-  const toggle = () => {
-    setShow(!show);
-  };
+import ar from '../assets/eg.png'
+export default function Header({className}) {
+
+  const [show,setShow] = useState(false)
+  const toggle=()=>{
+setShow(!show)
+  }
+
+
 
   const options = [
-    {
-      value: "en",
-      label: (
-        <div style={{ display: "flex", alignItems: "center", width: "1000px" }}>
-          <img src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
-          En
-        </div>
-      ),
-    },
-    {
-      value: "ar",
-      label: (
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <img src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
-          Ar
-        </div>
-      ),
-    },
-  ];
+  {
+    value: 'en',
+    label: (
+      <div style={{ display: 'flex', alignItems: 'center',width:'1000px'}}>
+        <img src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
+        En
+      </div>
+    ),
+  },
+  {
+    value: 'ar',
+    label: (
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <img src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
+        Ar
+      </div>
+    ),
+  },
+];
+
+
 
   return (
     <div className={`header`}>
@@ -38,7 +43,7 @@ export default function Header({ className }) {
         <div className="header-logo">
           <img src={logo} alt="logo" />
         </div>
-        <nav className={`${show ? "show-nav" : ""}`}>
+        <nav className={`${show?'show-nav':''}`}>
           <ul>
             <li>
               <Link className="header_nav_link" to="/">
@@ -75,23 +80,17 @@ export default function Header({ className }) {
                 Join As Affiliate
               </Link>
             </li>
-            <li>
+              <li>
               <Link className="header_nav_link" to="QuestionPage">
                 FAQS
               </Link>
             </li>
           </ul>
           <div className="lang">
-            {/* <Select options={options} /> */}
-            <select name="" id="">
-              <option value="">+02</option>
-              <option value="">+057</option>
-            </select>
+           <Select options={options} />
           </div>
         </nav>
-        <span className="material-symbols-outlined list_icon" onClick={toggle}>
-          menu
-        </span>
+        <span className="material-symbols-outlined list_icon" onClick={toggle}>menu</span>
       </div>
     </div>
   );

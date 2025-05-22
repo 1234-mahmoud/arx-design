@@ -3,38 +3,44 @@ import { AiFillYoutube } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import React from "react";
-import Select from 'react-select';
+import Select from "react-select";
 import "../style/Contact.css";
 import eng from "../assets/Eng.svg";
-import ar from '../assets/eg.png'
-
+import ar from "../assets/eg.png";
 
 export default function Contact() {
-
-  
-    const options = [
+  const options = [
     {
-      value: 'en',
+      value: "057",
       label: (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
-          En
+        <div style={{ display: "flex", alignItems: "center", width: "100px" }}>
+          <img src={ar} alt="English" style={{ width: 20, marginRight: 8 }} />
+          075
         </div>
       ),
     },
     {
-      value: 'ar',
+      value: "+703",
       label: (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
-          Ar
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img src={eng} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
+          +703
         </div>
       ),
     },
   ];
-  
-  
 
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      minHeight: "50px",
+      width: "100px",
+    }),
+    valueContainer: (provided) => ({
+      ...provided,
+      padding: "2px",
+    }),
+  };
 
   return (
     <div className="contact-comp">
@@ -108,8 +114,7 @@ export default function Contact() {
             <div className="phone input-cont">
               <label htmlFor="">Phone</label>
               <div className="phone-content">
-                <img src={ar} alt="icon" />
-                           <Select options={options} />
+                <Select Select options={options} styles={customStyles} />
 
                 <input type="text" placeholder="Phone Number" />
               </div>
