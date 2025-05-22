@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Partnerstats.css";
+import "../style/PartnerStats.css";
 import Counter from "../components/Counter";
 export default function PartnerStats() {
   return (
