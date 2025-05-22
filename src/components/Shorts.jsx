@@ -82,15 +82,15 @@ export default function Shorts() {
             {dataSlider.map((img, idx) => (
               <div className="card" key={idx}>
                 <div className="card-img">
-                  <img src={img} alt="" />
+                  <img loading="lazy" src={img} alt="" />
                 </div>
                 <div className="card-layer">
                   <div className="reel">
-                    <img src={reel} alt="" />
+                    <img loading="lazy" src={reel} alt="" />
                   </div>
 
                   <div className="vid">
-                    <img src={vid_icon} alt="" />
+                    <img loading="lazy" src={vid_icon} alt="" />
                   </div>
 
                   <div className="card-title">

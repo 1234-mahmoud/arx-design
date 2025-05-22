@@ -78,7 +78,7 @@ export default function Projects() {
             {dataSlider.map((img, idx) => (
               <div className="card" key={idx}>
                 <div className="card-img">
-                  <img src={img} alt="" />
+                  <img loading="lazy" src={img} alt="" />
                 </div>
                 <div className="proj_show_title">
                   <p>O7 MALL - O7</p>

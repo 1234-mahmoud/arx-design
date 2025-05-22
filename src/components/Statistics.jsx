@@ -11,7 +11,7 @@ export default function Statistics() {
   return (
     <div className="stats">
       <div className="stats-numbers">
-        <img src={bg} alt="" className="stats-background" />
+        <img loading="lazy" src={bg} alt="" className="stats-background" />
         <div className="stat_box">
           <div className="stat_label">
             <Counter end={25} />
@@ -36,9 +36,9 @@ export default function Statistics() {
       </div>
 
       <div className="partners">
-        <img src={pic1} alt="" />
-        <img src={pic2} alt="" />
-        <img src={pic3} alt="" />
+        <img loading="lazy" src={pic1} alt="" />
+        <img loading="lazy" src={pic2} alt="" />
+        <img loading="lazy" src={pic3} alt="" />
       </div>
     </div>
   );

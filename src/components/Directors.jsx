@@ -54,7 +54,7 @@ known for combining innovation with local and international expertise.`,
         </p>
         {data.map((i, idx) => (
           <div className="dir-card" key={idx}>
-            <img src={i.img} alt="" />
+            <img loading="lazy" src={i.img} alt="" />
             <div className="director-info">
               <h4>{i.name}</h4>
               <h5>{i.jobTitle}</h5>

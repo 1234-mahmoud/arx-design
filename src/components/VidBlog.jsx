@@ -12,7 +12,7 @@ export default function VidBlog() {
       </div>
       <div className="vid-boxes">
         <div className="vid_1">
-          <img src={pic1} alt="" />
+          <img loading="lazy" src={pic1} alt="" />
           <div className="vid-blog-layer">
             <span className="material-symbols-outlined vid-play">
               play_circle
@@ -26,7 +26,7 @@ export default function VidBlog() {
         <div className="vid_2">
           <div className="videos">
             <div className="sub-vid-1">
-              <img src={pic2} alt="" />
+              <img loading="lazy" src={pic2} alt="" />
               <div className="vid-blog-layer">
                <Link to='/OneBlog'>
                 <span className="material-symbols-outlined vid-play">
@@ -36,7 +36,7 @@ export default function VidBlog() {
               </div>
             </div>
             <div className="sub-vid-2">
-              <img src={pic3} alt="" />
+              <img loading="lazy" src={pic3} alt="" />
               <div className="vid-blog-layer">
                 <div className="hotel">
                   <span className="material-symbols-outlined vid-play">

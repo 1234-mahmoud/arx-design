@@ -12,10 +12,10 @@ export default function About_us() {
       <div className="container">
         <div className="building_block">
           <div className="building">
-            <img src={building_pic} alt="" />
+            <img loading="lazy" src={building_pic} alt="" />
           </div>
           <div className="arx_logo">
-            <img src={arx_logo} alt="" />
+            <img loading="lazy" src={arx_logo} alt="" />
           </div>
         </div>
         <div className="about_info">
@@ -27,7 +27,7 @@ export default function About_us() {
 
           <div className="about_goals">
             <div className="goal">
-              <img src={vision_pic} alt="" />
+              <img loading="lazy" src={vision_pic} alt="" />
               <p className="goal-title">Vision</p>
               <p className="goal_des">
                 Enhancing communities through innovative real estate projects,
@@ -37,7 +37,7 @@ export default function About_us() {
             </div>
             {/* ------------------------ */}
             <div className="goal">
-              <img src={mission_pic} alt="" />
+              <img loading="lazy" src={mission_pic} alt="" />
               <p className="goal-title">Mission</p>
               <p className="goal_des">
                 We uphold core values that drive sustainable and sophisticated
@@ -47,7 +47,7 @@ export default function About_us() {
             {/* ----------------------------------- */}
 
             <div className="goal">
-              <img src={values_pic} alt="" />
+              <img loading="lazy" src={values_pic} alt="" />
               <p className="goal-title">Values</p>
               <p className="goal_des">
                 Transparency: We uphold honesty and clarity in all our dealings.

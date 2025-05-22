@@ -6,7 +6,7 @@ import bg from '../assets/slide_2.jpg'
 export default function PrrojectsFilter() {
   return (
     <div className='proj-filter'>
-        <img src={bg} alt="" />
+        <img loading="lazy" src={bg} alt="" />
         <div className="search-box-filter">
             <h1>Projects</h1>
             <div className="search-filter">

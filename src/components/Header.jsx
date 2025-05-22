@@ -19,7 +19,7 @@ setShow(!show)
     value: 'en',
     label: (
       <div style={{ display: 'flex', alignItems: 'center',width:'1000px'}}>
-        <img src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
+        <img loading="lazy" src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
         En
       </div>
     ),
@@ -28,7 +28,7 @@ setShow(!show)
     value: 'ar',
     label: (
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
+        <img loading="lazy" src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
         Ar
       </div>
     ),
@@ -41,7 +41,7 @@ setShow(!show)
     <div className={`header`}>
       <div className="header-container">
         <div className="header-logo">
-          <img src={logo} alt="logo" />
+          <img loading="lazy" src={logo} alt="logo" />
         </div>
         <nav className={`${show?'show-nav':''}`}>
           <ul>

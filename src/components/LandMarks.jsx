@@ -54,7 +54,7 @@ export default function LandMarks() {
           {pics_one_slide[count].map((img, i) => (
           <Link to='/OneProject'>
             <div className="land-slide" key={i}>
-              <img src={img} alt="" />
+              <img loading="lazy" src={img} alt="" />
               <h3>Axiom Tower</h3>
             </div>
           </Link>

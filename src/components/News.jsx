@@ -31,7 +31,7 @@ export default function News() {
         {
             data.map((i,idx)=>(
                 <div className="card-news" key={idx}>
-                    <img src={i} alt="" />
+                    <img loading="lazy" src={i} alt="" />
                     <p>Prime Minister: Administrative Capital</p>
                 </div>
             ))

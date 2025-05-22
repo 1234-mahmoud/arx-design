@@ -37,7 +37,7 @@ export default function Vision() {
             <p>{i.description}</p>
           </div>
           <div className="vision-img">
-            <img src={i.img} alt="image" />
+            <img loading="lazy" src={i.img} alt="image" />
           </div>
         </div>
       ))}

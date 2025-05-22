@@ -75,7 +75,7 @@ export default function Blog() {
                 {dataSlider.map((img, idx) => (
                   <div className="card" key={idx}>
                     <div className="card-img">
-                      <img src={img} alt="" />
+                      <img loading="lazy" src={img} alt="" />
                     </div>
                     <div className="card-layer">
                       

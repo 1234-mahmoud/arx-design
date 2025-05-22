@@ -49,7 +49,7 @@ export default function Slider() {
               position: "absolute",
             }}
           >
-            <img src={i.img} alt="" />
+            <img loading="lazy" src={i.img} alt="" />
 
             <p className="slide_txt">{i.main_title}</p>
           </div>
@@ -65,7 +65,7 @@ export default function Slider() {
               }
               onClick={() => setCount(i)}
             >
-              <img src={slide.img} alt="" />
+              <img loading="lazy" src={slide.img} alt="" />
 
               <div className="circle">
                 <div className="circles"></div>

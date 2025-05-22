@@ -31,7 +31,7 @@ const data=[pic1,pic2,pic3]
       {/* ---------------------------------------------------- */}
       <div className="blog-info">
         <div className="blog-img">
-          <img src={pic2} alt="" />
+          <img loading="lazy" src={pic2} alt="" />
         </div>
         <div className="blog-data">
           <div className="date">
@@ -76,7 +76,7 @@ const data=[pic1,pic2,pic3]
         {
             data.map((i,idx)=>(
                 <div className="card-news" key={idx}>
-                    <img src={i} alt="" />
+                    <img loading="lazy" src={i} alt="" />
                     <p>Prime Minister: Administrative Capital</p>
                 </div>
             ))

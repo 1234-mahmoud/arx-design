@@ -14,13 +14,13 @@ export default function Partners() {
       </div>
       <div className="partners-comp">
         <div className="partner-img">
-          <img src={pic1} alt="" />
+          <img loading="lazy" src={pic1} alt="" />
         </div>
         <div className="partner-img">
-          <img src={pic2} alt="" />
+          <img loading="lazy" src={pic2} alt="" />
         </div>
         <div className="partner-img">
-          <img src={pic3} alt="" />
+          <img loading="lazy" src={pic3} alt="" />
         </div>
       </div>
     </div>

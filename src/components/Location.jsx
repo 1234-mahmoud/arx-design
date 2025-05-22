@@ -5,7 +5,7 @@ export default function Location() {
   return (
     <div className="proj-locations">
       <div className="admin-cap">
-        <img src={pic} alt="" />
+        <img loading="lazy" src={pic} alt="" />
       </div>
       <div className="prime-location">
        <div className="prime-location-container">
