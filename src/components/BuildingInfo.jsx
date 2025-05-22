@@ -95,21 +95,21 @@ export default function BuildingInfo() {
           </div>
           <div className="floors">
             <span className="specifications-name">
-              <span class="material-symbols-outlined">stacks</span>
+              <span className="material-symbols-outlined">stacks</span>
               floors
             </span>
             <span className="specifications-val">8</span>
           </div>
           <div className="rooms">
             <span className="specifications-name">
-              <span class="material-symbols-outlined">house</span>
+              <span className="material-symbols-outlined">house</span>
               rooms
             </span>
             <span className="specifications-val">100</span>
           </div>
           <div className="type">
             <span className="specifications-name">
-              <span class="material-symbols-outlined">house</span>
+              <span className="material-symbols-outlined">house</span>
               type
             </span>
             <span className="specifications-val">commercial</span>
