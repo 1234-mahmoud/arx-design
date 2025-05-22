@@ -3,8 +3,39 @@ import { AiFillYoutube } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import React from "react";
+import Select from 'react-select';
 import "../style/Contact.css";
+import eng from "../assets/Eng.svg";
+import ar from '../assets/eg.png'
+
+
 export default function Contact() {
+
+  
+    const options = [
+    {
+      value: 'en',
+      label: (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
+          En
+        </div>
+      ),
+    },
+    {
+      value: 'ar',
+      label: (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
+          Ar
+        </div>
+      ),
+    },
+  ];
+  
+  
+
+
   return (
     <div className="contact-comp">
       <div className="locations">
@@ -77,10 +108,9 @@ export default function Contact() {
             <div className="phone input-cont">
               <label htmlFor="">Phone</label>
               <div className="phone-content">
-                <img src="" alt="icon" />
-                <select name="" id="">
-                  <option value="">(+02)</option>
-                </select>
+                <img src={ar} alt="icon" />
+                           <Select options={options} />
+
                 <input type="text" placeholder="Phone Number" />
               </div>
             </div>
