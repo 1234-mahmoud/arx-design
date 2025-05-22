@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://1234-mahmoud.github.io/arx-template",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
