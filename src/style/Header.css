@@ -121,6 +121,7 @@ transform: translateX(0);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .header .header-container nav .lang select {

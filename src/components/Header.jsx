@@ -14,26 +14,26 @@ setShow(!show)
 
 
 
-  const options = [
-  {
-    value: 'en',
-    label: (
-      <div style={{ display: 'flex', alignItems: 'center',width:'1000px'}}>
-        <img loading="lazy" src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
-        En
-      </div>
-    ),
-  },
-  {
-    value: 'ar',
-    label: (
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img loading="lazy" src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
-        Ar
-      </div>
-    ),
-  },
-];
+//   const options = [
+//   {
+//     value: 'en',
+//     label: (
+//       <div style={{ display: 'flex', alignItems: 'center',width:'1000px'}}>
+//         <img loading="lazy" src={eng} alt="English" style={{ width: 20, marginRight: 8 }} />
+//         En
+//       </div>
+//     ),
+//   },
+//   {
+//     value: 'ar',
+//     label: (
+//       <div style={{ display: 'flex', alignItems: 'center' }}>
+//         <img loading="lazy" src={ar} alt="Arabic" style={{ width: 20, marginRight: 8 }} />
+//         Ar
+//       </div>
+//     ),
+//   },
+// ];
 
 
 
@@ -87,7 +87,11 @@ setShow(!show)
             </li>
           </ul>
           <div className="lang">
-           <Select options={options} />
+           {/* <Select options={options} /> */}
+           <select name="" id="">
+            <option value="">Ar</option>
+            <option value="">Eng</option>
+           </select>
           </div>
         </nav>
         <span className="material-symbols-outlined list_icon" onClick={toggle}>menu</span>
