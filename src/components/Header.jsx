@@ -38,7 +38,7 @@ setShow(!show)
 
 
   return (
-    <div className={`header`}>
+    <div className={`header ${className}`}>
       <div className="header-container">
         <div className="header-logo">
           <img loading="lazy" src={logo} alt="logo" />
