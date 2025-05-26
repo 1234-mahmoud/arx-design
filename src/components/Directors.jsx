@@ -49,9 +49,9 @@ known for combining innovation with local and international expertise.`,
         <p>Chairman Of The Board Of Directors Speech</p>
       </div>
       <div className="dir-cards">
-        <p className="dir-txt">
+        {/* <p className="dir-txt">
           A vision rooted in progress, driven by experience.
-        </p>
+        </p> */}
         {data.map((i, idx) => (
           <div className="dir-card" key={idx}>
             <img loading="lazy" src={i.img} alt="" />

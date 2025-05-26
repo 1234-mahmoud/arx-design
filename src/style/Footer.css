@@ -52,6 +52,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 118px;
+  padding: 0 50px;
 }
 
 @media (max-width:767px) {
@@ -185,9 +186,9 @@ width: 240px;
 }
 }
 
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width:768px) and (max-width:1380px) {
 .footer .footer-social {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 }
 

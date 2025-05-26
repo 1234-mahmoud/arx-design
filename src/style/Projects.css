@@ -1,7 +1,6 @@
 .projects {
-  width: 90%;
   height: 550px;
-  margin: 100px auto;
+  margin: 100px 0;
   /* background-color: bisque; */
   display: grid;
   grid-template-columns: 295px 1fr;
